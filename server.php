@@ -1,7 +1,9 @@
 <?php 
 
+$paragraph = $_POST["paragraph"];
+$censorWord = $_POST["censorWord"];
 
-
+$censored = str_replace($censorWord, '*****', $paragraph)
 
 ?>
 
