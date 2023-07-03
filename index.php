@@ -23,12 +23,13 @@
 <!-- Action: destinatario dei miei dat -->
 
 <form action="./server.php" method='POST'>
-    <input type="text" name="paragraph" id="paragraph">
-    <input type="text" name="censorWord" id="censorWord">
+    <label for="user-paragraph"> Insert a Paragraph</label>
+    <textarea name="userParagraph" id="user-paragraph" cols="30" rows="10"></textarea>
+    <input type="text" name="bannedWord" id="censorWord">
     
 
     <button type="submit">
-        Invia il form
+        Send
     </button>
 </form>
 </body>

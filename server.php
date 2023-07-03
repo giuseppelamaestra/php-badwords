@@ -1,9 +1,9 @@
 <?php 
 
-$paragraph = $_POST["paragraph"];
-$censorWord = $_POST["censorWord"];
+$paragraph = $_POST["userParagraph"];
+$censorWord = $_POST["bannedWord"];
 
-$censored = str_replace($censorWord, '*****', $paragraph)
+$bannedParagraph = str_replace($censorWord, '*****', $paragraph)
 
 ?>
 
@@ -17,7 +17,24 @@ $censored = str_replace($censorWord, '*****', $paragraph)
 </head>
 <body>
     
+<h1>
+    Questo è il paragrafo non censurato: 
+</h1>
+<p>
+    <em>
+      "<?php echo $paragraph;  ?>"
+    </em>
+   
+</p>
 
+<h2>
+    Il paragrafo censurato: 
+</h2>
+<p>
+    <em>
+        "<?php echo $bannedParagraph; ?>"
+    </em>
+</p>
 
 </body>
 </html>
